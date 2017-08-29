@@ -1,0 +1,1690 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic");
+/* line 5, ../../../../../libs/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../libs/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../libs/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../libs/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../libs/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../libs/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../libs/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../libs/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../libs/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss */
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* line 11, ../sass/screen.scss */
+*:focus {
+  outline: none !important;
+}
+
+/* line 14, ../sass/screen.scss */
+.container-fluid h1 {
+  font-size: 85px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* line 15, ../sass/screen.scss */
+.container-fluid h1 span {
+  color: #ffc300;
+}
+
+/* line 16, ../sass/screen.scss */
+.container-fluid h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+/* line 17, ../sass/screen.scss */
+.container-fluid h3 {
+  font-size: 40px;
+  text-align: center;
+  max-width: 600px;
+  color: #000;
+}
+
+/* line 18, ../sass/screen.scss */
+.container-fluid h3 span {
+  font-weight: 300;
+}
+
+/* line 19, ../sass/screen.scss */
+.container-fluid h5 {
+  font-size: 34px;
+  text-align: center;
+  line-height: 44px;
+  max-width: 600px;
+  color: #0865a3;
+}
+
+/* line 20, ../sass/screen.scss */
+.container-fluid h6 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.55;
+  max-width: 600px;
+}
+
+/* line 21, ../sass/screen.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 23, ../sass/screen.scss */
+.button {
+  color: #ffffff;
+  background-color: #0865a3;
+  border-radius: 10px;
+  height: 56px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  font-weight: 700;
+}
+
+/* line 36, ../sass/screen.scss */
+a:hover {
+  text-decoration: none !important;
+}
+
+/* line 37, ../sass/screen.scss */
+.wi {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 38, ../sass/screen.scss */
+#header {
+  transition: 0.5s ease;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+}
+/* line 46, ../sass/screen.scss */
+#header .top-header {
+  position: unset;
+  height: 80px;
+  width: 100%;
+}
+/* line 50, ../sass/screen.scss */
+#header .top-header img {
+  position: absolute;
+  width: 198px;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 56, ../sass/screen.scss */
+#header .top-header .top-navigation {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 61, ../sass/screen.scss */
+#header .top-header .top-navigation a {
+  color: #2e2e2e;
+  padding-bottom: 19px;
+  font-size: 16px;
+}
+/* line 64, ../sass/screen.scss */
+#header .top-header .top-navigation .intor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 65, ../sass/screen.scss */
+#header .top-header .top-navigation .intor a {
+  padding-bottom: 0;
+}
+/* line 66, ../sass/screen.scss */
+#header .top-header .top-navigation .into-two {
+  display: flex;
+  width: 204px;
+  justify-content: space-between;
+}
+/* line 71, ../sass/screen.scss */
+#header .down-header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 76, ../sass/screen.scss */
+#header .down-header .containe {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 80, ../sass/screen.scss */
+#header .down-header .containe .phNum {
+  font-size: 28px;
+}
+/* line 81, ../sass/screen.scss */
+#header .down-header .containe .tSocials {
+  display: flex;
+}
+/* line 81, ../sass/screen.scss */
+#header .down-header .containe .tSocials svg {
+  cursor: pointer;
+}
+/* line 82, ../sass/screen.scss */
+#header .down-header .containe .tSocials div {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+/* line 83, ../sass/screen.scss */
+#header .down-header .containe .colBack {
+  background: #0865a3;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+/*mobi menu*/
+/* line 89, ../sass/screen.scss */
+.hidden-menu .mobiMenu {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 96, ../sass/screen.scss */
+.hidden-menu .mobiMenu img {
+  width: 198px;
+  margin-bottom: 30px;
+}
+/* line 97, ../sass/screen.scss */
+.hidden-menu .mobiMenu .ssilk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 98, ../sass/screen.scss */
+.hidden-menu .mobiMenu .ssilk a {
+  margin: 6px 0;
+  color: #2e2e2e;
+  font-size: 16px;
+}
+/* line 99, ../sass/screen.scss */
+.hidden-menu .mobiMenu .phoneN {
+  font-size: 26px;
+  margin: 16px 0 21px 0;
+}
+/* line 100, ../sass/screen.scss */
+.hidden-menu .mobiMenu .linkSses {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+/* line 101, ../sass/screen.scss */
+.hidden-menu .mobiMenu .linkSses div {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+/* line 106, ../sass/screen.scss */
+.hidden-menu .mobiMenu .colBack {
+  background: #0865a3;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+/* line 115, ../sass/screen.scss */
+#mainImgWrap {
+  height: 100vh;
+  background: url("/img/head.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 122, ../sass/screen.scss */
+#mainImgWrap .arDown {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  margin: auto;
+  opacity: 1;
+  transition: 0.3s linear;
+  cursor: pointer;
+  animation: MoveUpDown  ease-in-out 1.5s infinite;
+}
+/* line 132, ../sass/screen.scss */
+#mainImgWrap .arDown:hover {
+  opacity: 0.6;
+}
+/* line 134, ../sass/screen.scss */
+#mainImgWrap .mainDesDiv {
+  text-align: center;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 37px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+/* line 148, ../sass/screen.scss */
+.titleSliderDiv {
+  padding-top: 100px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 153, ../sass/screen.scss */
+.titleSliderDiv h3 {
+  max-width: 100%;
+}
+/* line 154, ../sass/screen.scss */
+.titleSliderDiv h6 {
+  max-width: 100%;
+}
+
+/* line 156, ../sass/screen.scss */
+.mainSlider {
+  padding-top: 105px;
+}
+
+/**/
+/* line 159, ../sass/screen.scss */
+#calculator {
+  background-color: #e3e3e3;
+}
+/* line 161, ../sass/screen.scss */
+#calculator .titlecalculDiv {
+  padding-top: 45px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 166, ../sass/screen.scss */
+#calculator .titlecalculDiv h3 {
+  max-width: 100%;
+}
+/* line 167, ../sass/screen.scss */
+#calculator .titlecalculDiv h6 {
+  max-width: 100%;
+}
+/* line 169, ../sass/screen.scss */
+#calculator .calculatorApp {
+  background: #fff;
+  margin: 0 -15px;
+}
+/* line 172, ../sass/screen.scss */
+#calculator .calculatorApp .under-calc {
+  margin-bottom: 0;
+  max-width: 100%;
+  border-bottom: 2px solid #F3F7FB;
+  padding-bottom: 25px;
+  margin-top: 1px;
+  font-size: 20px;
+}
+
+/**/
+/* line 184, ../sass/screen.scss */
+#contactForm {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+/* line 187, ../sass/screen.scss */
+#contactForm .rampa {
+  border-width: 15px;
+  border: 15px solid #ffc300;
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.3);
+  padding: 60px 45px 70px;
+}
+/* line 192, ../sass/screen.scss */
+#contactForm .rampa .titleContactForm {
+  margin-bottom: 74px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 197, ../sass/screen.scss */
+#contactForm .rampa .titleContactForm p {
+  font-size: 20px;
+  line-height: 2.3;
+}
+/* line 198, ../sass/screen.scss */
+#contactForm .rampa .titleContactForm span {
+  color: #e77548;
+}
+/* line 200, ../sass/screen.scss */
+#contactForm .rampa .formDiv {
+  height: 422px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+/* line 204, ../sass/screen.scss */
+#contactForm .rampa .formDiv label {
+  font-size: 18px;
+  color: #222;
+  font-weight: 300;
+}
+/* line 205, ../sass/screen.scss */
+#contactForm .rampa .formDiv .validate {
+  margin-top: 20px;
+  border-bottom: 1px solid #ffc300 !important;
+  box-shadow: 0 1px 0 0 #ffc300 !important;
+}
+/* line 209, ../sass/screen.scss */
+#contactForm .rampa .formDiv .validate:focus {
+  border-bottom: 1px solid #ffc300;
+  box-shadow: 0 1px 0 0 #ffc300;
+}
+/* line 212, ../sass/screen.scss */
+#contactForm .rampa .formDiv .input-field label {
+  font-size: 25px;
+  line-height: 1.55;
+  font-weight: 300;
+  color: #000;
+}
+
+/**/
+/* line 218, ../sass/screen.scss */
+#whyWeUse {
+  padding-bottom: 65px;
+  background: url("/img/h2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  min-height: 696px;
+}
+/* line 226, ../sass/screen.scss */
+#whyWeUse .rgbaColor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: -webkit-linear-gradient(top, rgba(8, 101, 163, 0.8), rgba(97, 230, 9, 0.5));
+  display: flex;
+  justify-content: center;
+}
+/* line 227, ../sass/screen.scss */
+#whyWeUse .infoBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px;
+}
+/* line 229, ../sass/screen.scss */
+#whyWeUse .infoBlock h6 {
+  margin-bottom: 40px;
+}
+/* line 230, ../sass/screen.scss */
+#whyWeUse .infoBlock a {
+  color: #ffffff;
+  background-color: #1f5bff;
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+}
+
+/**/
+/* line 244, ../sass/screen.scss */
+#lights {
+  padding-top: 135px;
+}
+/* line 245, ../sass/screen.scss */
+#lights .lightsTitleDiv {
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+/* line 246, ../sass/screen.scss */
+#lights .lightsTitleDiv h5 {
+  margin: -10px 0 30px 0;
+}
+/* line 247, ../sass/screen.scss */
+#lights .lightsTitleDiv p {
+  font-size: 26px;
+  line-height: 1.45;
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: 300;
+}
+/* line 253, ../sass/screen.scss */
+#lights .lightsCont {
+  max-width: 1200px;
+  margin-bottom: 180px;
+}
+/* line 254, ../sass/screen.scss */
+#lights .lightQ {
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+/* line 260, ../sass/screen.scss */
+#lights .lightQ img {
+  width: 100%;
+  height: 100%;
+}
+
+/**/
+/* line 265, ../sass/screen.scss */
+#priceList {
+  background: #efefef;
+  padding: 135px 0;
+}
+/* line 268, ../sass/screen.scss */
+#priceList .priceListTitleDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 271, ../sass/screen.scss */
+#priceList .priceListTitleDiv p {
+  max-width: 510px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+/* line 275, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground .boxPrice {
+  width: 260px;
+  margin: 0 auto;
+  background: #fff;
+  margin-bottom: 40px;
+}
+/* line 280, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground .boxPrice .upper {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+/* line 285, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground .boxPrice .downer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 27px 30px;
+  box-sizing: border-box;
+  min-height: 445px;
+  position: relative;
+}
+/* line 295, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground .boxPrice .downer h6 {
+  text-align: unset;
+  line-height: 1.35;
+  font-weight: 600px;
+  font-size: 26px;
+}
+/* line 296, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground .boxPrice .downer p {
+  font-size: 14px;
+  line-height: 1.55;
+  margin-top: 10px;
+}
+/* line 297, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground .boxPrice .downer span {
+  font-size: 30px;
+  text-align: unset;
+  font-weight: 300px;
+  position: absolute;
+  bottom: 20px;
+}
+/* line 298, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground .boxPrice .downer a {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  left: 15px;
+  right: 15px;
+  margin: auto;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 5px;
+  line-height: 40px;
+  padding: 0 3%;
+}
+/* line 312, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground:nth-child(1) .upper {
+  background: url(/img/w1.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 313, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground:nth-child(2) .upper {
+  background: url(/img/w2.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 314, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground:nth-child(3) .upper {
+  background: url(/img/worker.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 315, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground:nth-child(4) .upper {
+  background: url(/img/w4.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 316, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground:nth-child(5) .upper {
+  background: url(/img/w5.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 317, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground:nth-child(6) .upper {
+  background: url(/img/w6.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 318, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground:nth-child(7) .upper {
+  background: url(/img/w7.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 319, ../sass/screen.scss */
+#priceList .priceListboxes .forBackground:nth-child(8) .upper {
+  background: url(/img/w8.jpeg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+/* line 323, ../sass/screen.scss */
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/*svg menu*/
+/* line 329, ../sass/screen.scss */
+#mobile-ico {
+  position: absolute;
+  width: 100%;
+  height: 61px;
+  background: #000;
+  display: none;
+}
+
+/* line 330, ../sass/screen.scss */
+#button {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* line 331, ../sass/screen.scss */
+svg {
+  display: block;
+}
+
+/* line 332, ../sass/screen.scss */
+.line1, .line2, .line3 {
+  transition: all 0.3s ease;
+}
+
+/* line 333, ../sass/screen.scss */
+.open1 {
+  transform-origin: top left;
+  transform: translatex(3px) translatey(-1px) rotate(45deg);
+  width: 33px;
+}
+
+/* line 334, ../sass/screen.scss */
+.open2 {
+  opacity: 0;
+}
+
+/* line 335, ../sass/screen.scss */
+.open3 {
+  transform-origin: bottom left;
+  transform: translatex(3px) translatey(1px) rotate(-45deg);
+  width: 33px;
+}
+
+/* line 336, ../sass/screen.scss */
+.hidden-menu {
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+/* line 337, ../sass/screen.scss */
+.opend {
+  display: block;
+}
+
+/*popupDiv*/
+/* line 341, ../sass/screen.scss */
+#contentPopup {
+  padding-top: 105px;
+}
+/* line 342, ../sass/screen.scss */
+#contentPopup .popupTitle h3 {
+  max-width: 100%;
+  padding-bottom: 75px;
+}
+/* line 344, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG {
+  width: 25%;
+  float: left;
+  height: 250px;
+  overflow: hidden;
+  border: 7px solid #fff;
+}
+/* line 350, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG img {
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  opacity: 0;
+}
+/* line 354, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG:nth-child(1) {
+  background: url("/img/p1.jpg") no-repeat center;
+  background-size: cover;
+}
+/* line 355, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG:nth-child(2) {
+  background: url("/img/p2.jpg") no-repeat center;
+  background-size: cover;
+}
+/* line 356, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG:nth-child(3) {
+  background: url("/img/p3.jpg") no-repeat center;
+  background-size: cover;
+}
+/* line 357, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG:nth-child(4) {
+  background: url("/img/p4.jpg") no-repeat center;
+  background-size: cover;
+}
+/* line 358, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG:nth-child(5) {
+  background: url("/img/p5.jpg") no-repeat center;
+  background-size: cover;
+}
+/* line 359, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG:nth-child(6) {
+  background: url("/img/p6.jpg") no-repeat center;
+  background-size: cover;
+}
+/* line 360, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG:nth-child(7) {
+  background: url("/img/p7.jpg") no-repeat center;
+  background-size: cover;
+}
+/* line 361, ../sass/screen.scss */
+#contentPopup .popusAreHere .customG:nth-child(8) {
+  background: url("/img/p8.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/**/
+/* line 368, ../sass/screen.scss */
+#howWeBoild {
+  padding: 150px 20px;
+}
+/* line 369, ../sass/screen.scss */
+#howWeBoild h3 {
+  max-width: 100%;
+  padding-bottom: 75px;
+}
+/* line 370, ../sass/screen.scss */
+#howWeBoild .controller {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 371, ../sass/screen.scss */
+#howWeBoild .controller .howBox {
+  width: 235px;
+  margin-bottom: 35px;
+}
+/* line 372, ../sass/screen.scss */
+#howWeBoild .controller .howBox .verh {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* line 373, ../sass/screen.scss */
+#howWeBoild .controller .howBox .verh img {
+  width: 104px;
+  border: 2px solid #222;
+  border-radius: 50%;
+}
+/* line 374, ../sass/screen.scss */
+#howWeBoild .controller .howBox .verh .separ {
+  position: absolute;
+  left: -118px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 150px;
+  height: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 383, ../sass/screen.scss */
+#howWeBoild .controller .howBox .verh .separ .quar {
+  width: 4px;
+  height: 4px;
+  background: #222;
+}
+/* line 386, ../sass/screen.scss */
+#howWeBoild .controller .howBox .niz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 387, ../sass/screen.scss */
+#howWeBoild .controller .howBox .niz p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #000;
+}
+/* line 390, ../sass/screen.scss */
+#howWeBoild .controller .howBox .niz p span {
+  font-size: 20px;
+  color: #f45e5e;
+}
+/* line 394, ../sass/screen.scss */
+#howWeBoild .button {
+  margin-top: 70px;
+}
+
+/**/
+/* line 398, ../sass/screen.scss */
+#footForm {
+  position: relative;
+  color: #fff;
+  background: url("/img/footerh.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 696px;
+}
+/* line 405, ../sass/screen.scss */
+#footForm .footerFormTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 408, ../sass/screen.scss */
+#footForm .footerFormTitle h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  color: #fff;
+}
+/* line 413, ../sass/screen.scss */
+#footForm .footerFormTitle p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  padding: 19px 0 10px;
+  text-align: center;
+}
+/* line 420, ../sass/screen.scss */
+#footForm .footerForm {
+  max-width: 620px;
+}
+/* line 422, ../sass/screen.scss */
+#footForm .footerForm #fForm .placH {
+  background: #fff;
+  border-radius: 5px;
+  line-height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  height: 56px;
+  color: #222;
+}
+/* line 430, ../sass/screen.scss */
+#footForm .footerForm #fForm .sender {
+  background: #ff7300;
+  text-align: center;
+  height: 56px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 17px;
+}
+/* line 441, ../sass/screen.scss */
+#footForm .withoutSpam {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* line 448, ../sass/screen.scss */
+.plavniy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: -webkit-linear-gradient(top, rgba(8, 101, 163, 0.8), rgba(230, 7, 167, 0.6));
+}
+
+/**/
+/* line 462, ../sass/screen.scss */
+#footerWr {
+  padding: 50px 20px;
+  background: #171717;
+}
+/* line 466, ../sass/screen.scss */
+#footerWr .vooter p {
+  font-size: 14px;
+  color: silver;
+  margin-bottom: 3px;
+}
+/* line 469, ../sass/screen.scss */
+#footerWr .vooter p a {
+  color: #eb7373;
+}
+
+/*calculatorApp*/
+/* line 474, ../sass/screen.scss */
+#price {
+  width: 100%;
+  background: #fff;
+  height: 100%;
+  min-height: 176px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 481, ../sass/screen.scss */
+#price > div {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 484, ../sass/screen.scss */
+.ploscha {
+  justify-content: space-around !important;
+}
+/* line 486, ../sass/screen.scss */
+.ploscha h5 {
+  font-size: 18px;
+  line-height: 23px;
+  color: #222;
+}
+/* line 488, ../sass/screen.scss */
+.ploscha .orangeBord {
+  border: 2px solid #FD9610;
+  width: 114px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FD9610;
+  font-size: 17px;
+  font-weight: 500;
+}
+/* line 498, ../sass/screen.scss */
+.ploscha .orangeBord .ploscha #polzun-result-metr {
+  line-height: 43px;
+}
+/* line 499, ../sass/screen.scss */
+.ploscha .orangeBord .kvadrate {
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+
+/* line 506, ../sass/screen.scss */
+.polzunok {
+  width: 400px;
+  height: auto;
+}
+/* line 509, ../sass/screen.scss */
+.polzunok p {
+  font-size: 19px;
+  color: #FD9610;
+  padding: 0 25px;
+  margin-bottom: 0;
+}
+/* line 510, ../sass/screen.scss */
+.polzunok .polzun {
+  line-height: 60px;
+  width: 220px;
+  height: 6px;
+  background: #ecece3;
+  position: relative;
+  margin: 0 0 4px 0;
+  padding: 0 10px;
+  border-radius: 10px;
+  position: relative;
+}
+/* line 520, ../sass/screen.scss */
+.polzunok .polzun .zakra {
+  height: 6px;
+  width: 1%;
+  background: #FD9610;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+}
+
+/*╨б╤В╨╕╨╗╤М ╨║╨╜╨╛╨┐╨║╨╕ ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░*/
+/* line 535, ../sass/screen.scss */
+.ui-slider-handle {
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  top: -13px;
+  margin-left: -15px;
+  z-index: 3;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #FD9610;
+}
+
+/* line 548, ../sass/screen.scss */
+.money-result {
+  float: left;
+  width: 235px;
+  height: 100px;
+  display: flex;
+}
+/* line 553, ../sass/screen.scss */
+.money-result .containerForPrice {
+  background: #FD9610;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 59px;
+  width: 250px;
+  color: #fff;
+  padding: 10px 20px 0;
+}
+/* line 561, ../sass/screen.scss */
+.money-result .containerForPrice .firstPrice {
+  display: flex;
+  font-size: 19px;
+}
+/* line 562, ../sass/screen.scss */
+.money-result .containerForPrice .firstPrice #polzun-result-money {
+  padding: 0 5px;
+}
+/* line 564, ../sass/screen.scss */
+.money-result .containerForPrice .secondPrice {
+  display: flex;
+  font-size: 19px;
+}
+/* line 566, ../sass/screen.scss */
+.money-result .containerForPrice .secondPrice #polzun-result-money2 {
+  padding: 0 5px;
+}
+
+/* line 572, ../sass/screen.scss */
+.forArrowKriv {
+  position: relative;
+}
+
+/* line 573, ../sass/screen.scss */
+.forArrowKriv .t581__arrow-icon {
+  position: absolute;
+  left: -70px;
+  bottom: -20px;
+  width: 50px;
+  height: 100px;
+}
+
+/* line 580, ../sass/screen.scss */
+.forArrowKriv .t581__arrow-icon_mobile {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -85px;
+  width: 23px;
+  height: 100px;
+  margin: auto;
+}
+
+/*timepicker*/
+/* line 591, ../sass/screen.scss */
+.formDiv .forDerf {
+  border-bottom: 1px solid #ffc300 !important;
+  box-shadow: 0 1px 0 0 #ffc300 !important;
+}
+
+/* line 592, ../sass/screen.scss */
+.picker__date-display {
+  background-color: #ffc300 !important;
+}
+
+/* line 593, ../sass/screen.scss */
+.clockpicker-canvas-bg, .clockpicker-canvas-bearing {
+  fill: #ffc300 !important;
+}
+
+/* line 594, ../sass/screen.scss */
+.clockpicker-canvas line {
+  stroke: #ffc300 !important;
+}
+
+/* line 595, ../sass/screen.scss */
+.clockpicker-tick.active, .clockpicker-tick:hover {
+  background-color: rgba(230, 200, 0, 0.5) !important;
+}
+
+/*slick slider*/
+/* line 598, ../sass/screen.scss */
+.my-slider {
+  position: relative;
+}
+/* line 600, ../sass/screen.scss */
+.my-slider .slideej {
+  display: flex !important;
+  margin-bottom: 50px;
+}
+/* line 602, ../sass/screen.scss */
+.my-slider .slideej .img-slid {
+  padding: 0 15px 0 35px;
+  width: 55%;
+}
+/* line 603, ../sass/screen.scss */
+.my-slider .slideej .img-slid img {
+  width: 100%;
+}
+/* line 604, ../sass/screen.scss */
+.my-slider .slideej .content-slide {
+  padding: 0 35px 0 15px;
+  width: 45%;
+}
+/* line 605, ../sass/screen.scss */
+.my-slider .slideej .content-slide h5 {
+  font-size: 36px;
+  text-align: left;
+  font-weight: 600;
+  margin-top: -9px;
+}
+/* line 606, ../sass/screen.scss */
+.my-slider .slideej .content-slide p {
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+/* line 607, ../sass/screen.scss */
+.my-slider .slideej .content-slide span {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+/* line 612, ../sass/screen.scss */
+.slick-arrow {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+/* line 618, ../sass/screen.scss */
+.slick-arrow img {
+  opacity: 0.4;
+}
+
+/* line 619, ../sass/screen.scss */
+.prev-arrow {
+  left: 0;
+  z-index: 9;
+}
+
+/* line 620, ../sass/screen.scss */
+.next-arrow {
+  right: 0;
+}
+
+/* line 622, ../sass/screen.scss */
+button:focus {
+  background-color: transparent !important;
+}
+
+/* line 623, ../sass/screen.scss */
+.slick-dotted.slick-slider {
+  margin-top: 100px;
+}
+
+@media (max-width: 1230px) {
+  /* line 625, ../sass/screen.scss */
+  .controller {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* line 626, ../sass/screen.scss */
+  #howWeBoild .controller .howBox .verh .separ {
+    left: -59px;
+    width: 109px;
+  }
+
+  /* line 627, ../sass/screen.scss */
+  #header .top-header .top-navigation .into-two {
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    height: 58px;
+    align-items: center;
+  }
+
+  /* line 635, ../sass/screen.scss */
+  #header .top-header .top-navigation .into-two a {
+    padding-bottom: 0px;
+  }
+
+  /* line 636, ../sass/screen.scss */
+  #header .top-header .top-navigation {
+    width: 340px;
+  }
+
+  /* line 637, ../sass/screen.scss */
+  .my-slider .slideej .content-slide h5 {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 25px;
+  }
+
+  /* line 638, ../sass/screen.scss */
+  .my-slider .slideej .content-slide p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 1170px) {
+  /* line 640, ../sass/screen.scss */
+  #lights .lightQ {
+    width: 303px;
+    height: 303px;
+  }
+
+  /* line 640, ../sass/screen.scss */
+  #contentPopup .popusAreHere .customG {
+    width: 33.33%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 641, ../sass/screen.scss */
+  .hidden-menu {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  /* line 643, ../sass/screen.scss */
+  #header {
+    display: none;
+  }
+
+  /* line 644, ../sass/screen.scss */
+  #mobile-ico {
+    display: block;
+    z-index: 99;
+  }
+
+  /* line 645, ../sass/screen.scss */
+  .controller {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* line 646, ../sass/screen.scss */
+  #howWeBoild .controller .howBox .verh .separ {
+    transform: rotate(90deg);
+    left: 0;
+    width: 54px;
+    right: 0;
+    top: -182px;
+  }
+
+  /* line 647, ../sass/screen.scss */
+  .hiii {
+    display: none;
+  }
+
+  /* line 648, ../sass/screen.scss */
+  #howWeBoild .controller .howBox {
+    margin-bottom: 61px;
+  }
+
+  /* line 649, ../sass/screen.scss */
+  .hidden-menu .mobiMenu img {
+    margin-top: 61px;
+  }
+
+  /* line 650, ../sass/screen.scss */
+  #contentPopup .popusAreHere .customG {
+    width: 50%;
+  }
+
+  /* line 651, ../sass/screen.scss */
+  .forArrowKriv .t581__arrow-icon {
+    display: none;
+  }
+
+  /* line 652, ../sass/screen.scss */
+  .forArrowKriv .t581__arrow-icon_mobile {
+    display: block;
+  }
+
+  /* line 653, ../sass/screen.scss */
+  .forArrowKriv {
+    margin-top: 33px;
+  }
+
+  /* line 655, ../sass/screen.scss */
+  .slideej {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* line 656, ../sass/screen.scss */
+  .my-slider .slideej > div {
+    width: 100% !important;
+    max-width: 650px;
+  }
+
+  /* line 657, ../sass/screen.scss */
+  .my-slider .slideej .img-slid {
+    padding: 0;
+    height: 100%;
+  }
+
+  /* line 658, ../sass/screen.scss */
+  .my-slider .slideej .content-slide {
+    padding: 0;
+  }
+
+  /* line 659, ../sass/screen.scss */
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* line 664, ../sass/screen.scss */
+  .titleSliderDiv h6 {
+    max-width: 666px;
+  }
+
+  /* line 665, ../sass/screen.scss */
+  .slick-dotted.slick-slider {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 885px) {
+  /* line 669, ../sass/screen.scss */
+  #price > div {
+    margin: 15px;
+    width: 90%;
+  }
+
+  /* line 669, ../sass/screen.scss */
+  #price {
+    flex-direction: column;
+  }
+
+  /* line 669, ../sass/screen.scss */
+  #priceList .priceListboxes .forBackground .boxPrice {
+    width: 240px;
+  }
+
+  /* line 669, ../sass/screen.scss */
+  #priceList .priceListboxes .forBackground .boxPrice .downer {
+    padding: 20px 15px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 671, ../sass/screen.scss */
+  #priceList .priceListboxes .forBackground .boxPrice .downer {
+    padding: 27px 15px 96px;
+  }
+
+  /* line 672, ../sass/screen.scss */
+  .container-fluid h2, .container-fluid h5 {
+    font-size: 30px;
+  }
+
+  /* line 673, ../sass/screen.scss */
+  #lights .lightsTitleDiv p {
+    font-size: 20px;
+  }
+
+  /* line 674, ../sass/screen.scss */
+  #priceList .priceListboxes .forBackground .boxPrice {
+    max-width: 291px;
+    width: 100%;
+  }
+
+  /* line 675, ../sass/screen.scss */
+  #priceList .priceListboxes .forBackground .boxPrice .downer {
+    min-height: unset;
+    height: 360px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 676, ../sass/screen.scss */
+  #contactForm .rampa {
+    padding: 30px 20px 45px;
+  }
+
+  /* line 676, ../sass/screen.scss */
+  #contactForm {
+    padding-bottom: 40px;
+  }
+
+  /* line 676, ../sass/screen.scss */
+  #whyWeUse .infoBlock h2 {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 678, ../sass/screen.scss */
+  .button {
+    width: 100%;
+    font-size: 13px;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  /* line 679, ../sass/screen.scss */
+  .plavniy {
+    padding: 33px 20px 0;
+  }
+
+  /* line 680, ../sass/screen.scss */
+  #priceList .priceListTitleDiv {
+    padding: 0 15px;
+  }
+
+  /* line 681, ../sass/screen.scss */
+  #contactForm .rampa .formDiv .input-field label {
+    font-size: 20px;
+    margin-left: -12px;
+  }
+
+  /* line 682, ../sass/screen.scss */
+  #howWeBoild .button {
+    width: 250px;
+  }
+
+  /* line 683, ../sass/screen.scss */
+  .slick-arrow {
+    display: none !important;
+  }
+}
+@media (max-width: 460px) {
+  /* line 685, ../sass/screen.scss */
+  .container-fluid h1 {
+    font-size: 34px;
+  }
+
+  /* line 686, ../sass/screen.scss */
+  .container-fluid h2 {
+    font-size: 30px;
+  }
+
+  /* line 687, ../sass/screen.scss */
+  .container-fluid h3 {
+    font-size: 28px;
+  }
+
+  /* line 688, ../sass/screen.scss */
+  .container-fluid h5 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  /* line 689, ../sass/screen.scss */
+  .container-fluid h6 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.55;
+    max-width: 600px;
+  }
+
+  /* line 690, ../sass/screen.scss */
+  #priceList .priceListboxes .forBackground .boxPrice {
+    width: 100%;
+  }
+
+  /* line 691, ../sass/screen.scss */
+  #lights .lightQ {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 692, ../sass/screen.scss */
+  .row .col {
+    padding: unset !important;
+  }
+
+  /* line 693, ../sass/screen.scss */
+  #whyWeUse .infoBlock h6 {
+    margin-bottom: 27px;
+  }
+
+  /* line 694, ../sass/screen.scss */
+  #contentPopup .popusAreHere .customG {
+    height: 150px;
+    border: 2px solid #fff;
+  }
+
+  /* line 695, ../sass/screen.scss */
+  .titleSliderDiv, .mainSlider, #contactForm, #lights, #contentPopup {
+    padding-top: 40px;
+  }
+
+  /* line 696, ../sass/screen.scss */
+  #whyWeUse .infoBlock h2 {
+    margin-top: 0;
+  }
+
+  /* line 697, ../sass/screen.scss */
+  #lights .lightsCont {
+    margin-bottom: 0;
+  }
+
+  /* line 698, ../sass/screen.scss */
+  #priceList {
+    padding: 50px 0;
+  }
+
+  /* line 699, ../sass/screen.scss */
+  #howWeBoild {
+    padding: 50px 20px;
+  }
+
+  /* line 700, ../sass/screen.scss */
+  #howWeBoild .button {
+    margin-top: 0;
+  }
+
+  /* line 701, ../sass/screen.scss */
+  #priceList .priceListboxes .forBackground .boxPrice .downer {
+    height: unset;
+  }
+}
+@media (max-width: 350px) {
+  /* line 705, ../sass/screen.scss */
+  .button {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1370px) {
+  /* line 707, ../sass/screen.scss */
+  #header .top-header .top-navigation {
+    width: 570px;
+  }
+
+  /* line 708, ../sass/screen.scss */
+  #header .top-header .top-navigation .intor {
+    flex-direction: inherit;
+    justify-content: space-between;
+    width: 250px;
+  }
+
+  /* line 709, ../sass/screen.scss */
+  #header .top-header .top-navigation .intor a {
+    padding-bottom: 19px;
+  }
+
+  /* line 710, ../sass/screen.scss */
+  #header .top-header .top-navigation {
+    width: 570px;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 713, ../sass/screen.scss */
+  #header > div {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  /* line 714, ../sass/screen.scss */
+  .top-navigation a {
+    padding-bottom: 0 !important;
+  }
+}
